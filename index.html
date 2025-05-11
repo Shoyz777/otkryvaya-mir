@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открывая мир</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 20px;
+            margin: 10px 0 20px;
+        }
+        header a {
+            background-color: #ff6600;
+            padding: 12px 24px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .tours, .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .tour-card, .review-card {
+            flex: 1 1 calc(33% - 20px);
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .tour-card img, .review-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .tour-card h3, .review-card h3 {
+            padding: 15px;
+            margin: 0;
+        }
+        .review-card p {
+            padding: 0 15px 15px 15px;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Открывая мир</h1>
+        <p>Путешествуй с вдохновением</p>
+        <a href="#tours">Выбрать тур</a>
+    </header>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Компания "Открывая мир" — это ваш надежный партнер в организации путешествий по самым удивительным местам планеты. Мы предлагаем уникальные маршруты и индивидуальный подход к каждому клиенту, чтобы ваша поездка была комфортной и незабываемой.
+            Наша команда состоит из опытных путешественников и профессионалов в сфере туризма, готовых помочь вам открыть для себя новые культуры и впечатления. Мы заботимся о каждой детали, чтобы ваше путешествие стало настоящим удовольствием.
+            Присоединяйтесь к "Открывая мир", и позвольте нам сделать ваш следующий отпуск незабываемым!</p>
+    </section>
+
+    <section id="tours">
+        <h2>Наши туры</h2>
+        <div class="tours">
+            <div class="tour-card">
+                <img src="https://avatars.mds.yandex.net/i?id=7ed60af8dfa6a73c370df6ff262805287249f215-8178526-images-thumbs&n=13" alt="Тур в Париж">
+                <h3>Париж, Франция</h3>
+            </div>
+            <div class="tour-card">
+                <img src="https://avatars.mds.yandex.net/i?id=193e86cdf8f7107b5a3fe571c823a1fdaf345124-4858813-images-thumbs&n=13" alt="Тур на Бали">
+                <h3>Бали, Индонезия</h3>
+            </div>
+            <div class="tour-card">
+                <img src="https://avatars.mds.yandex.net/i?id=bfe20d3de0659728562798962327cedb2e89e480-12569767-images-thumbs&n=13" alt="Тур в Японию">
+                <h3>Токио, Япония</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Отзывы клиентов</h2>
+        <div class="reviews">
+            <div class="review-card">
+                <img src="https://avatars.mds.yandex.net/i?id=c42963c1b6b5aff9ddaeeaac7cb83095d58dbf3e-4766966-images-thumbs&n=13" alt="Анна">
+                <h3>Анна Петрова</h3>
+                <p>Это было потрясающее путешествие! Всё было организовано на высшем уровне. Спасибо "Открывая мир"!</p>
+            </div>
+            <div class="review-card">
+                <img src="https://ak2.picdn.net/shutterstock/videos/733972/thumb/1.jpg" alt="Иван">
+                <h3>Иван Смирнов</h3>
+                <p>Я посетил Бали с этой компанией и остался в восторге. Уже планирую следующую поездку.</p>
+            </div>
+            <div class="review-card">
+                <img src="https://avatars.mds.yandex.net/i?id=6180d5aa9e7421a32d679137e393e7b0-4077577-images-thumbs&n=13" alt="Елена">
+                <h3>Елена Кузнецова</h3>
+                <p>Профессионализм, забота и внимание к деталям. Рекомендую всем друзьям!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Email: info@otkryvayamir.ru<br>Телефон: +7 (999) 123-45-67</p>
+    </section>
+
+    <section id="author">
+        <h2>«Сайт был создан учеником 9Д класса "МАОУ СОШ №59" г. Чебоксары Родионовым Александром Дмитриевичем»</h2>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Открывая мир — все права защищены</p>
+    </footer>
+</body>
+</html>
